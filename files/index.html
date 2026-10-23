@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sara Vitória | Portfólio</title>
+  <meta name="description" content="Portfólio de Sara Vitória, estudante do Ensino Médio Técnico no Senac, começando a jornada na programação.">
+
+  <!-- Fontes do Google: Instrument Serif (títulos) e DM Sans (textos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ============ MENU ============ -->
+  <header class="topo">
+    <a class="logo" href="#inicio" aria-label="Sara Vitória, voltar ao início">Sara Vitória</a>
+
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <span></span><span></span>
+    </button>
+
+    <nav id="menu" class="menu" aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#jornada">Jornada</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#alem">Além da tecnologia</a>
+      <a href="#sonhos">Sonhos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ HOME ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <p class="hero-pequeno">Portfólio 2026<br>estudante, programadora iniciante</p>
+
+        <h1>
+            <em>Portfolio</em>
+        </h1>
+
+        <p class="hero-resumo">
+          Sou a Sara Vitória, estudante do Ensino Médio Técnico no Senac. Começando a programar,
+          aprendendo a transformar ideias em projetos.
+        </p>
+
+        <a class="botao" href="#projetos">Conhecer meu portfólio</a>
+
+        <!-- Números honestos, no estilo da referência -->
+        <dl class="numeros">
+          <div><dt>1º</dt><dd>ano do Ensino Médio Técnico</dd></div>
+          <div><dt>3</dt><dd>projetos no GitHub</dd></div>
+          <div><dt>3</dt><dd>tecnologias em estudo</dd></div>
+        </dl>
+      </div>
+
+      <!-- Foto de perfil. Troque o arquivo foto.jpg para mudar a imagem. -->
+      <div class="hero-foto">
+        <img src="foto.jpg" alt="Retrato de Sara Vitória, de cabelos escuros e ondulados, olhando para a câmera e sorrindo de leve">
+      </div>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="secao sobre" id="sobre">
+      <p class="frase-grande revelar">
+        Oi! Eu sou a Sara Vitória, estudante do primeiro ano do Ensino Médio Técnico no Senac.
+        Estou começando minha jornada no mundo da programação e aprendendo a transformar ideias
+        em projetos usando HTML, CSS e JavaScript.
+      </p>
+      <p class="sobre-resto revelar">
+        Sou uma pessoa que gosta de maquiagem, valoriza muito as amizades, sabe falar inglês e
+        tem muitos sonhos para o futuro. Quero continuar aprendendo, evoluindo e descobrindo
+        novas possibilidades.
+      </p>
+    </section>
+
+    <!-- ============ JORNADA ============ -->
+    <section class="secao" id="jornada">
+      <h2 class="revelar">Minha jornada na programação</h2>
+      <p class="secao-intro revelar">Estou em constante aprendizado. Isto é o que já faz parte dos meus estudos.</p>
+
+      <div class="habilidades">
+        <article class="hab hab-rosa revelar">
+          <h3>HTML</h3>
+          <p>Conhecimentos básicos para estruturar páginas web.</p>
+        </article>
+        <article class="hab hab-lilas revelar">
+          <h3>CSS</h3>
+          <p>Criação de estilos, layouts e interfaces visuais.</p>
+        </article>
+        <article class="hab hab-branca revelar">
+          <h3>JavaScript</h3>
+          <p>Primeiros passos na programação e na criação de interações.</p>
+        </article>
+        <article class="hab hab-rosa revelar">
+          <h3>Inglês</h3>
+          <p>Uma habilidade que pode ajudar nos meus estudos e em oportunidades futuras.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJETOS ============ -->
+    <section class="secao" id="projetos">
+      <h2 class="revelar">Meus projetos</h2>
+      <p class="secao-intro revelar">Trabalhos desenvolvidos durante meus estudos no Senac.</p>
+
+      <!-- Os cartões são criados pelo script.js a partir da lista "projetos" -->
+      <div class="projetos" id="listaProjetos"></div>
+    </section>
+
+    <!-- ============ ALÉM DA TECNOLOGIA ============ -->
+    <section class="secao" id="alem">
+      <h2 class="revelar">Além da tecnologia</h2>
+
+      <!-- Lista em linhas, inspirada na referência. Cada linha abre ao clicar. -->
+      <ul class="linhas">
+        <li class="linha">
+          <button class="linha-btn" aria-expanded="false">
+            <span>Maquiagem</span><span class="mais" aria-hidden="true">+</span>
+          </button>
+          <p class="linha-texto">Gosto de beleza, maquiagem e criatividade.</p>
+        </li>
+        <li class="linha">
+          <button class="linha-btn" aria-expanded="false">
+            <span>Amizades</span><span class="mais" aria-hidden="true">+</span>
+          </button>
+          <p class="linha-texto">Valorizo minhas amigas, os momentos compartilhados e as pessoas importantes na minha vida.</p>
+        </li>
+        <li class="linha">
+          <button class="linha-btn" aria-expanded="false">
+            <span>Inglês</span><span class="mais" aria-hidden="true">+</span>
+          </button>
+          <p class="linha-texto">Gosto de ampliar meus conhecimentos e explorar novas oportunidades.</p>
+        </li>
+        <li class="linha">
+          <button class="linha-btn" aria-expanded="false">
+            <span>Novas descobertas</span><span class="mais" aria-hidden="true">+</span>
+          </button>
+          <p class="linha-texto">Estou vivendo uma fase de aprendizado, crescimento e autoconhecimento.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ SONHOS ============ -->
+    <section class="secao sonhos" id="sonhos">
+      <div class="sonhos-caixa revelar">
+        <h2>Meus sonhos para o futuro</h2>
+        <p>
+          Tenho muitos sonhos para o futuro e um deles é me tornar psicóloga. Quero compreender
+          melhor as pessoas, aprender sobre os sentimentos e desenvolver habilidades que me
+          permitam ajudar outras pessoas. Enquanto isso, sigo estudando tecnologia, descobrindo
+          novos caminhos e construindo minha própria história.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="secao contato" id="contato">
+      <h2 class="revelar">Vamos trocar ideias?</h2>
+      <p class="secao-intro revelar">Se quiser conversar sobre estudos, tecnologia ou projetos, é só chamar.</p>
+
+      <!-- Os botões são preenchidos pelo script.js (objeto "contatos").
+           Botões sem link ficam escondidos. -->
+      <div class="contato-links" id="contatoLinks"></div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Feito por Sara Vitória, 2026.</p>
+  </footer>
+
+  <button class="topo-btn" id="topoBtn" aria-label="Voltar ao topo" hidden>↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
